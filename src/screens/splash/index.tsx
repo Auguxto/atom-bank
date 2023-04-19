@@ -1,10 +1,18 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+
+import * as S from './styles';
 
 export default function Splash() {
   return (
-    <View>
-      <Text>Splash</Text>
-    </View>
+    <S.Container>
+      <S.Background>
+        <S.Logo />
+        <S.Cards>
+          <S.Card1 />
+          <S.Card2 />
+          <S.Card3 />
+        </S.Cards>
+      </S.Background>
+    </S.Container>
   );
 }
